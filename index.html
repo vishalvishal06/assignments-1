@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        img {
+            position: fixed;
+            bottom: 35px;
+            right: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        form{
+            display: block;
+            margin: auto;
+            border: 4px solid black;
+            height: 600px;
+            width: 400px;
+            margin-top: 50px;
+        }
+    </style>
+ 
+ </head>
+   <body>
+    <header>
+        <h1>Pizza Order Form</h1>
+    </header>
+
+    <main>
+        <p><img src="artesanal-pizza-cheese-close-up-1566837.jpg" alt="Delicious Pizza" height="100" width="100"></p>
+        <form action="order_confirmation">
+            <fieldset>
+                <legend>Pizzaa</legend>
+                <label for="pizzas">Number of Pizzas:</label>
+                <input type="text" placeholder="Enter number of pizza" ><br>
+                <label for="slices">number of slices </label><br>
+                <input type="radio"><label for="slices">1</label>
+                <input type="radio"><label for="slices">2</label>
+                <input type="radio"><label for="slices">3</label>
+                <input type="radio"><label for="slices">4</label><br><br>
+
+                <label for="size">Size:</label><br>
+                <input type="radio"><label for="size">small</label><br>
+                <input type="radio"><label for="size">medium</label><br>
+                <input type="radio"><label for="size">large</label><br>
+
+
+                <label>Shape:</label><br>
+                <input type="checkbox"><label for="Shape">round</label><br>
+                <input type="checkbox"><label for="Shape">square</label><br><br>
+
+                <label>Toppings:</label><br>
+                <input type="checkbox"><label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox"><label for="onions">Onions</label><br>
+                <input type="checkbox"><label for="Mushrooms">Mushrooms</label><br><br>
+
+                <label for="crust">Crust Type:</label><br>
+                 <select id="crust" name="crust">
+                 <option value="deep-dish">Deep Dish</option>
+                  <option value="thin-crust">Thin Crust</option>
+                  <option value="regular" selected>Regular</option>
+                 </select><br>
+                
+                <label>Delivery Options:</label><br>
+                <input type="checkbox"><label for="take-out">Take-out</label><br>
+                <input type="checkbox"><label for="delivery">Delivery</label><br>
+                <input type="checkbox"><label for="eat-in">Eat-in</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="Name">name</label>
+                <input type="text" placeholder="Enter your name " ><br>
+
+                <label for="phone">Phone:</label>
+                <input type="number" placeholder="Enter your number " ><br>
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea name="comments"  placeholder="Feedback"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Place Order">
+            <input type="reset" value="Reset Form">
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Pizza Time Inc. All rights reserved.</p>
+    </footer>
+     
+</body>
+</html>
